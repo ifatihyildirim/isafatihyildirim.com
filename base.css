@@ -1,0 +1,94 @@
+
+body {
+   margin: 0;
+}
+
+h2 {
+   color: #3c3c3c;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   margin-bottom: 0;
+}
+
+p {
+
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.state {
+   color: #666;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: semi-bold;
+}
+
+.tag > a {
+   color: #9f9f9f;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   font-size: small;
+   padding: 2px 3px 2px 0px;
+}
+
+.tag {
+   margin-bottom: 10px;
+}
+
+.left {
+   float: left;
+   background: black;
+   height:100vh;
+
+}
+
+.left_image {
+   background-image: url("https://instagram.fsaw1-2.fna.fbcdn.net/t51.2885-15/e35/17332995_1313710455379765_745294984701280256_n.jpg");
+   background-size: cover;
+   background-position: center center;
+   height: 100%;
+   width: 100%;
+}
+
+/* social icom */
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+}
+
+.social-icons a li {
+    text-decoration: none;
+}
+
+.social-icons > li > a {
+    color: #9f9f9f;
+    padding:10px 10px 10px 0px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+}
+
+.fa-facebook:hover {
+    color: #3d5b99;
+}
+
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+
+.fa-linkedin:hover {
+    color: #0073a4;
+}
+
+.fa-github:hover {
+    color: #333;
+}
