@@ -3,6 +3,23 @@ body {
  margin: 0;
 }
 
+/* left side */
+.left {
+ float: left;
+ background: black;
+ height:100vh;
+
+}
+
+.left_image {
+ background-image: url("https://instagram.fada1-1.fna.fbcdn.net/t51.2885-15/e35/16123897_1698916773682314_3813006832209756160_n.jpg");
+ background-size: cover;
+ background-position: center center;
+ height: 100%;
+ width: 100%;
+}
+
+/* Content */
 h2 {
  color: #3c3c3c;
  font-family: 'Roboto', sans-serif;
@@ -11,7 +28,6 @@ h2 {
 }
 
 p {
-
  font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -31,21 +47,6 @@ p {
 
 .tag {
  margin-bottom: 10px;
-}
-
-.left {
- float: left;
- background: black;
- height:100vh;
-
-}
-
-.left_image {
- background-image: url("https://instagram.fada1-1.fna.fbcdn.net/t51.2885-15/e35/16123897_1698916773682314_3813006832209756160_n.jpg");
- background-size: cover;
- background-position: center center;
- height: 100%;
- width: 100%;
 }
 
 /* social icom */
@@ -99,7 +100,6 @@ ul {
   position: absolute;
   bottom: 5px;
   overflow: hidden;
-
   color: #9f9f9f;
   font-family: 'Open Sans', sans-serif;
   font-size: small;
@@ -109,5 +109,4 @@ ul {
 .footer > * {
  color: #3c3c3c;
  text-decoration: none;
-
 }
