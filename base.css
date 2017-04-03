@@ -16,6 +16,25 @@ body {
  background-position: center center;
  height: 100%;
  width: 100%;
+ z-index: 0;
+}
+
+.change_image {
+  position: absolute;
+  bottom: 5px;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 10px 8px;
+  color: #9f9f9f;
+  z-index: 15;
+}
+
+.change_image > a {
+  margin-left: 5px;
+    color: #fff;
+ text-decoration: none;
 }
 
 /* Content */

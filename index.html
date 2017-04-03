@@ -10,8 +10,11 @@
 <body>
 	<div class="wrap xl-flexbox">
 		<div class="col xl-7-12 xs-1-1 left">
-			<div class="left_image" style="background-image: url('https://instagram.fada1-1.fna.fbcdn.net/t51.2885-15/e35/16123897_1698916773682314_3813006832209756160_n.jpg');
-" ></div>
+			<div class="change_image">
+				<span id="photo-title"></span>
+				<a href="#" onClick="change_left_image()" >Change Image</a>
+			</div>
+			<div class="left_image" ></div>
 		</div>
 		<div class="col xl-5-12 xs-1-1">
 			<div class="wrap xl-center">
@@ -51,23 +54,30 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript">
-		var settings = {
-			"async": true,
-			"crossDomain": true,
-			"url": "https://api.unsplash.com/photos/random/?query=cities&orientation=portrait&client_id=efc336ec5769c683da5760e4d364871a9112c724bf5f70b2f0f448fd7a36de37",
-			"method": "GET",
-			"headers": {
-				"cache-control": "no-cache",
-				"postman-token": "4e44637a-1835-4937-3cdf-2e9c410847f0"
-			}
+
+		function change_left_image() {
+			$.ajax({
+				url: 'https://api.unsplash.com/photos/random/?query=cities&orientation=portrait&client_id=efc336ec5769c683da5760e4d364871a9112c724bf5f70b2f0f448fd7a36de37',
+				type: 'GET',
+				error: function() {
+					var background = document.querySelector('.left_image');
+					var title = document.getElementById('photo-title');
+					background.style.backgroundImage = 'url(https://instagram.fada1-1.fna.fbcdn.net/t51.2885-15/e35/16123897_1698916773682314_3813006832209756160_n.jpg)';
+					title.innerHTML = 'Beijing - Republic of China';
+				},
+				success: function(data) {
+					var image = data.urls.regular;
+					var title_image = data.location.city + " - " + data.location.country;
+					var background = document.querySelector('.left_image');
+					var title = document.getElementById('photo-title');
+					background.style.backgroundImage = 'url(' + image + ')';
+					title.innerHTML = title_image;
+				}
+			});
 		}
 
-		$.ajax(settings).done(function (response) {
-			var image = response.urls.raw;
-			var background = document.querySelector('.left_image');
-			console.log(background);
-			background.style.backgroundImage = 'url(' + image + ')';
-		});
+		change_left_image();
+
 	</script>
 </body>
 </html>
