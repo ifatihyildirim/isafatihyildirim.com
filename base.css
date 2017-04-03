@@ -4,11 +4,30 @@ body {
 }
 
 /* left side */
+
+@media (min-width: 667px) {
+  .left {
+   height:100vh;
+  }
+
+  .change_image {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 667px) {
+  .left {
+     height:50vh;
+  }
+
+  .change_image {
+    bottom: 50vh;
+  }
+}
+
 .left {
  float: left;
  background: black;
- height:100vh;
-
 }
 
 .left_image {
@@ -21,7 +40,6 @@ body {
 
 .change_image {
   position: absolute;
-  bottom: 5px;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: small;
@@ -33,8 +51,8 @@ body {
 
 .change_image > a {
   margin-left: 5px;
-    color: #fff;
- text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Content */
@@ -114,9 +132,9 @@ ul {
 
 /* footer */
 
-.footer{
-  position: absolute;
+.footer {
   bottom: 5px;
+  position: absolute;
   overflow: hidden;
   color: #9f9f9f;
   font-family: 'Open Sans', sans-serif;
