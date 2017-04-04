@@ -8,21 +8,21 @@ body {
 @media (min-width: 667px) {
   .left {
    height:100vh;
-  }
+ }
 
-  .change_image {
-    bottom: 5px;
-  }
+ .change_image {
+  bottom: 5px;
+}
 }
 
 @media (max-width: 667px) {
   .left {
-     height:50vh;
-  }
+   height:40vh;
+ }
 
-  .change_image {
-    bottom: 50vh;
-  }
+ .change_image {
+  bottom: 60vh;
+}
 }
 
 .left {
@@ -132,8 +132,21 @@ ul {
 
 /* footer */
 
+@media (min-width: 667px) {
+  .footer {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 667px) {
+  .footer {
+    bottom: auto;
+    padding: 5px ;
+
+  }
+}
+
 .footer {
-  bottom: 5px;
   position: absolute;
   overflow: hidden;
   color: #9f9f9f;
