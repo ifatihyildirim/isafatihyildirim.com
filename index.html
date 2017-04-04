@@ -56,6 +56,12 @@
 	<script type="text/javascript">
 
 		function change_left_image() {
+
+			function isDefined(x) {
+				var undefined;
+				return x !== undefined;
+			}
+
 			$.ajax({
 				url: 'https://api.unsplash.com/photos/random/?query=cities&orientation=portrait&client_id=efc336ec5769c683da5760e4d364871a9112c724bf5f70b2f0f448fd7a36de37',
 				type: 'GET',
@@ -67,7 +73,11 @@
 				},
 				success: function(data) {
 					var image = data.urls.regular;
-					var title_image = data.location.city + " - " + data.location.country;
+					if (data && isDefined(data.location)) {
+						var title_image = data.location.title;
+					} else{
+						var title_image = "untitled";
+					}
 					var background = document.querySelector('.left_image');
 					var title = document.getElementById('photo-title');
 					background.style.backgroundImage = 'url(' + image + ')';
