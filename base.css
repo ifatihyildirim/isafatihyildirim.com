@@ -9,38 +9,33 @@ body {
   .left {
    height:100vh;
  }
-
- .change_image {
-  bottom: 5px;
-}
 }
 
 @media (max-width: 667px) {
   .left {
    height:40vh;
  }
+}
 
- .change_image {
-  bottom: 60vh;
-}
-}
 
 .left {
- float: left;
- background: black;
+  position: relative;
+  float: left;
+  background: black;
 }
 
 .left_image {
- background-size: cover;
- background-position: center center;
- height: 100%;
- width: 100%;
- z-index: 0;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .change_image {
   position: absolute;
   overflow: hidden;
+  bottom: 5px;
   font-family: 'Open Sans', sans-serif;
   font-size: small;
   background: rgba(0, 0, 0, 0.4);
