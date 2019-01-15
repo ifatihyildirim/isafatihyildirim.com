@@ -1,0 +1,31 @@
+.social {
+    padding: 0;
+    list-style: none;
+
+    li {
+        vertical-align: top;
+        display: inline;
+
+        a {
+            color: #9f9f9f;
+            padding: 10px 10px 10px 0px;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+
+            .fa-twitter:hover {
+                color: #00aced;
+            }
+
+            .fa-linkedin:hover {
+                color: #0073a4;
+            }
+
+            .fa-github:hover {
+                color: #333;
+            }
+        }
+    }
+}

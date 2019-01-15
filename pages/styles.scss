@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+div {
+    display: flex;
+}
+
+.main {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
