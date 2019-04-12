@@ -1,7 +1,0 @@
-{
-    "version": 1,
-    "name": "isafatihyildirim.com",
-    "builds": [
-        { "src": "next.config.js", "use": "@now/next" }
-    ]
-}
